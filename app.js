@@ -1,12 +1,9 @@
 const express = require("express");
 const app = express();
-
 const welcome = (req, res) => {
   res.send("Welcome to my favourite movie list");
 };
-
 app.get("/", welcome);
-
 const movies = [
   {
     title: "Citizen Kane",
